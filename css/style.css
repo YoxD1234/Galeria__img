@@ -1,0 +1,33 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300&family=Poppins:wght@600&display=swap');
+
+.gallery__title{
+    font-family: 'poppins';
+    margin-top: 50px;
+    font-size: 2.5rem;
+}
+.gallery__title::after{
+    content: "";
+    display: block;
+    height: 4px;
+    background-color: crimson;
+    width: 200px;
+    margin-top: 10px;
+}
+.container{
+    width: 90%;
+    max-width: 1250px;
+    margin: 0 auto;
+    overflow: hidden;
+}
+.gallery__grid{
+    padding: 30px 0;
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(280px,1fr));
+    gap: 15px;
+    grid-auto-rows: 320px;
+}
+.gallery__img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
